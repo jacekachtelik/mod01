@@ -1,5 +1,5 @@
 var OSinfo = require('./modules/OsInfo');
-OSinfo.print();
+
 // Proces obsługi interakcji z użytkownikiem z poziomu konsoli
 process.stdin.setEncoding("utf-8");
 process.stdin.on('readable', function() {
@@ -16,7 +16,7 @@ process.stdin.on('readable', function() {
                 process.stdout.write('Hello ;-)\n');
                 break;
             case '/getOsInfo':
-                getOsInfo();
+                OSinfo.print();
                 break;
             default:
                 process.stderr.write('Wrong instruction!\n');

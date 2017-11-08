@@ -1,5 +1,5 @@
 var os = require('os');
-var time = require("./Time.js")
+var time = require("./Time.js");
 // Funckja pobierajaca dane środowiska
 function getOsInfo() {
     var type = os.type();

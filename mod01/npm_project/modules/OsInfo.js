@@ -1,5 +1,6 @@
 var os = require('os');
-var time = require("./Time.js")
+var time = require("./Time.js");
+var colors = require('colors');
 // Funckja pobierajaca dane środowiska
 function getOsInfo() {
     var type = os.type();
@@ -15,12 +16,12 @@ function getOsInfo() {
     }
     var release = os.release();
     var uptime = os.uptime();
-    console.log('System: ' + type);
-    console.log('Release: ' + release);
-    console.log('CPU: ' + os.cpus()[0]['model']);
-    console.log('Uptime: ~', time.convert(uptime) );
-    console.log('User name:', os.userInfo().username);
-    console.log('Home dir:', os.userInfo().homedir);
+    console.log(colors.grey('System: ') + type);
+    console.log(colors.red('Release: ') + release);
+    console.log(colors.blue('CPU: ') + os.cpus()[0]['model']);
+    console.log(colors.green('Uptime: ~'), time.convert(uptime) );
+    console.log(colors.cyan('User name:'), os.userInfo().username);
+    console.log(colors.yellow('Home dir:'), os.userInfo().homedir);
 }
 
 exports.print = getOsInfo;
