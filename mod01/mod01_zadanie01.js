@@ -25,7 +25,7 @@ envCoding = nodeLanguage.substring(position + 1,nodeLanguage.length);
 nodeLanguage = nodeLanguage.substring(0,position);
 // console.log(nodeLanguage);
 // console.log(position);
-console.log(envCoding);
+// console.log(envCoding);
 message = ""; // ponowne wprowadzenie do jednej zmiennej
 switch (nodeLanguage) {
     case 'pl_PL':
