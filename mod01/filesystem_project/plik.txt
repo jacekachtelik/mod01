@@ -1,3 +1,7 @@
-Tekst, który jest w pliku txt.
-Tekst, który zostanie zapisany w pliku txt
-A tak wyglądają po zapisie
+Pliki w katalogu
+index.js
+mountain.jpg
+node_modules
+package-lock.json
+package.json
+plik.txt

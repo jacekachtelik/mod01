@@ -45,16 +45,38 @@ fs.readdir(path, function(err, items) {
 //    console.log('Elementy katalogu'.red,items);
     for (var i=0; i<= items.length; i++) {
         console.log(items[i]);
-        console.log(typeof(items[i]));
+//        console.log(typeof(items[i]));
+        var fileInDirectory = items[i];
         if (items[i] !== undefined) {
-           fs.stat(items[i], function (err, stats) {
+/*           fs.stat(items[i], function (err, stats) {
                 var statMode = new StatMode(stats);
-                console.log("Uprawnienia: " + statMode.toString());
+//                console.log("Uprawnienia: " + statMode.toString());
 //                console.log("Katalog: ",statMode.isDirectory().toString());
                 var directory = statMode.isDirectory
-                console.log("Czy jest to katalog? " + (directory === true) ? "Tak" : "Nie");
+//                console.log("Czy jest to katalog? " + (directory === true) ? "Tak" : "Nie");
+                var data = '\n' + fileInDirectory + ': uprawnienia: ' + statMode.toString() + '; katalog: ' + ((directory === true) ? "Tak" : "Nie");
+               console.log('Dane do zapisania',data);
+              
+               
+            });*/
+            
+            fs.appendFile(textFile,'\n' + items[i], function(err) {
+                if (err) throw err;
+                console.log('Zapisano!'.blue);
             });
         }
 
-    }
+    } // Koniec pętli for
+    
 });
+
+// Zostanie wykonana najpierw.
+fs.writeFile(textFile,'Pliki w katalogu', function(err) {
+    if (err) throw err;
+    console.log("Wykonano ;-)");
+});
+
+fs.readFile(textFile,'utf-8',function(err,data) {
+    console.log('Dane po zapisie'.blue) ;
+    console.log(data);
+ });
