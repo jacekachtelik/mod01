@@ -1,0 +1,3 @@
+Tekst, który jest w pliku txt.
+Tekst, który zostanie zapisany w pliku txt
+A tak wyglądają po zapisie

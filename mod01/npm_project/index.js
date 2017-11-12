@@ -1,7 +1,7 @@
 var OSinfo = require('./modules/OsInfo');
 
 var eventEmitter = require('events').EventEmitter;
-var emitter = new EventEmitter();
+var emitter = new eventEmitter();
 emitter.on('beforeCommand', function(instruction){
     console.log("You wrote: " + instruction + " to execute command");
 });

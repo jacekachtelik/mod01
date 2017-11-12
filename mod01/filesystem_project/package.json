@@ -1,0 +1,22 @@
+{
+  "name": "filesystem_project",
+  "version": "1.0.0",
+  "description": "Projekt nauki obsługi plików na serwerze",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js ./"
+  },
+  "keywords": [
+    "npm",
+    "file",
+    "system",
+    "node"
+  ],
+  "author": "Jacek Achtelik",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "stat-mode": "^0.2.2"
+  }
+}
