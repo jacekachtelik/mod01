@@ -1,0 +1,23 @@
+{
+  "name": "uploader_www",
+  "version": "1.0.0",
+  "description": "Uploader plików na serwer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "webserver",
+    "http",
+    "fs"
+  ],
+  "author": "Jacek Achtelik",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "fs": "0.0.1-security",
+    "nodemon": "^1.12.1"
+  }
+}

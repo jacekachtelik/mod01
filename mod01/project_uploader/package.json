@@ -1,0 +1,25 @@
+{
+  "name": "project_uploader",
+  "version": "1.0.0",
+  "description": "Uploader plików",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "node",
+    "js",
+    "uploader",
+    "files",
+    "www",
+    "http"
+  ],
+  "author": "Jacek Achtelik",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "fs": "0.0.1-security",
+    "nodemon": "^1.12.1"
+  }
+}
