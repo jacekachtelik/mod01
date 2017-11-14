@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "script": "nodemon index.js"
+    "start": "nodemon index.js"
   },
   "keywords": [
     "npm",
@@ -20,6 +20,7 @@
   "license": "ISC",
   "dependencies": {
     "colors": "^1.1.2",
+    "formidable": "^1.1.1",
     "fs": "0.0.1-security",
     "nodemon": "^1.12.1"
   }

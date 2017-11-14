@@ -7,7 +7,7 @@ function start() {
     console.log("Odebrano zapytanie.".green);
     console.log("Zapytanie " + request.url + " odebrane.");
     response.writeHead(200, {"Content-Type": "text/plain; charset=utf-8"});
-    switch(response.url) {
+    switch(request.url) {
       case '/':
       case '/start':
         handlers.welcome(request,response);
