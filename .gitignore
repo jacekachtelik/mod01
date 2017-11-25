@@ -1,0 +1,14 @@
+mod01/filesystem_project/node_modules/*
+mod01/node_modules/*
+mod01/project_uploader/node_modules/*
+udemy/*
+szkolenie_js/*
+
+
+javascript/
+
+Udemy/
+
+\.vscode/
+
+mod01/node_modules/

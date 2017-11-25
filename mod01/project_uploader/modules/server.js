@@ -16,13 +16,13 @@ function start() {
         handlers.upload(request,response);
         break;
       case '/show':
-        handlers.show(request, response);  
+        handlers.show(request, response);
         break;
       default:
         handlers.error(request,response);
         break;
     }
-    response.end();
+//    response.end();
   }
 
   http.createServer(onRequest).listen(9000);
